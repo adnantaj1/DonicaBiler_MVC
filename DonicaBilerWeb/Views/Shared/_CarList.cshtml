@@ -1,0 +1,17 @@
+﻿@model IEnumerable<DonicaBiler.Models.Models.Car>
+
+<div class="row">
+    @foreach (var car in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card car-card">
+                <img class="card-img-top" src="@Url.Content(car.ImageUrl)" alt="Car Image">
+
+            </div>
+            <div class="card-body">
+                <h5 class="car-title">@car.ModelName</h5>
+                <p class="car-text">@car.Price.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("da-DK")) / @car.Kilometers km</p>
+            </div>
+        </div>
+    }
+</div>

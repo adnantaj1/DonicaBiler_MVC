@@ -1,0 +1,108 @@
+﻿.footer {
+    position: relative; /* Needed for the absolute positioning of the pseudo-element */
+    color: #fff; /* Keep text color white for contrast */
+    padding: 40px 0; /* Ample padding for aesthetic spacing */
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden; /* Ensures the pseudo-element doesn't extend outside the footer */
+}
+
+    .footer::before {
+        content: ''; /* Required for pseudo-elements */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/donica1.jpeg'); /* Path to your background image */
+        background-size: cover; /* Cover the entire area of the footer */
+        background-position: center; /* Center the background image */
+        filter: blur(8px); /* Adjust the px value to increase or decrease the blur effect */
+        z-index: -1; /* Ensures the blur is behind the footer content */
+    }
+
+.footer-content {
+    position: relative; /* Ensures the content is on top of the blurred background */
+    z-index: 2; /* Higher than the pseudo-element's z-index */
+   
+}
+
+
+    .footer h1, .footer h5 {
+        margin-bottom: 15px; /* Space below headings */
+        color: #ffd700; /* Golden color for headings to make them stand out */
+    }
+
+    .footer p {
+        line-height: 1.6; /* Improved line spacing for readability */
+        margin-bottom: 10px; /* Space below paragraphs */
+    }
+
+    .footer a {
+        color: #ffd700; /* Golden color links */
+        transition: color 0.3s ease; /* Smooth transition for hover effects */
+    }
+
+        .footer a:hover {
+            color: #cccccc; /* Light grey on hover for better interaction feedback */
+        }
+
+.footer .nav-link {
+    color: #A9A9A9; /* White color for navigation links */
+    font-size: 1rem; /* Readable font size */
+    transition: color 0.3s ease; /* Transition effect for hover state */
+}
+
+        .footer .nav-link:hover {
+            color: #ffd700; /* Golden color on hover */
+        }
+
+.footer .social-icons a{
+    font-size: 2rem; /* Larger size for better visibility */
+    margin-right: 15px; /* Increase spacing between icons */
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+.social-icon {
+    background-color: #3b5998; /* Default background for Facebook */
+    color: white; /* Icon color */
+    border-radius: 50%; /* Makes the background circle */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    display: flex;
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    text-decoration: none; /* Remove underline from icon */
+    margin-right: 10px; /* Spacing between icons */
+    margin-top: 10px;
+}
+
+    /* Specific styles for each platform */
+    .social-icon.facebook:hover {
+        background-color: #305777; /* Darker blue on hover for Facebook */
+    }
+
+    .social-icon.instagram {
+        background-color: #C13584; /* Instagram brand color */
+    }
+
+        .social-icon.instagram:hover {
+            background-color: #E1306C; /* Darker pink on hover for Instagram */
+        }
+
+    .social-icon.tiktok {
+        background-color: #000000; /* TikTok uses black */
+    }
+
+        .social-icon.tiktok:hover {
+            background-color: #333333; /* Darker grey on hover for TikTok */
+        }
+
+
+/* Utility classes for alignment and layout adjustments */
+.text-right {
+    text-align: right;
+}
+
+.nav {
+    margin-top: 20px; /* Top margin for navbar */
+}

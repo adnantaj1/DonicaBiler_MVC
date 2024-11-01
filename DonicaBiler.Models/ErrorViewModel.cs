@@ -1,4 +1,4 @@
-namespace DonicaBilerWeb.Models
+﻿namespace DonicaBiler.Models
 {
     public class ErrorViewModel
     {

@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonicaBilerWeb", "DonicaBilerWeb\DonicaBilerWeb.csproj", "{E88CA8A8-6E16-43C0-8F06-68D110061217}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DonicaBilerWeb", "DonicaBilerWeb\DonicaBilerWeb.csproj", "{E88CA8A8-6E16-43C0-8F06-68D110061217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonicaBiler.DataAccess", "DonicaBiler.DataAccess\DonicaBiler.DataAccess.csproj", "{45E0539A-609D-46DF-9A52-C05F01E78A48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonicaBiler.Models", "DonicaBiler.Models\DonicaBiler.Models.csproj", "{220DA857-1228-41CD-B6C5-3B09F952B8B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DonicaBiler.Utility", "DonicaBiler.Utility\DonicaBiler.Utility.csproj", "{DD958F71-B082-491B-B7AC-78B63655A7C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{E88CA8A8-6E16-43C0-8F06-68D110061217}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E88CA8A8-6E16-43C0-8F06-68D110061217}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E88CA8A8-6E16-43C0-8F06-68D110061217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E0539A-609D-46DF-9A52-C05F01E78A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E0539A-609D-46DF-9A52-C05F01E78A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E0539A-609D-46DF-9A52-C05F01E78A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E0539A-609D-46DF-9A52-C05F01E78A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220DA857-1228-41CD-B6C5-3B09F952B8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220DA857-1228-41CD-B6C5-3B09F952B8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220DA857-1228-41CD-B6C5-3B09F952B8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220DA857-1228-41CD-B6C5-3B09F952B8B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD958F71-B082-491B-B7AC-78B63655A7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD958F71-B082-491B-B7AC-78B63655A7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD958F71-B082-491B-B7AC-78B63655A7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD958F71-B082-491B-B7AC-78B63655A7C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

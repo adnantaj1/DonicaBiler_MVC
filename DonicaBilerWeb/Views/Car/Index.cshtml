@@ -1,0 +1,13 @@
+﻿@model IEnumerable<DonicaBiler.Models.Models.Car>
+
+<div class="hero">
+    <div class="image-background" style="background-image: url('@Url.Content("~/assets/donica1.jpeg")');">
+        <!-- Content -->
+    </div>
+</div>
+<div class="car-listing-section">
+    <div class="container">
+        <h2 class="text-center my-4">NYESTE BILER PÅ LAGER</h2>
+        <partial name="_CarList" model="Model" />
+    </div>
+</div>

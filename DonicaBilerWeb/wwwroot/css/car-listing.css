@@ -1,0 +1,40 @@
+﻿.car-listing-section {
+    background-color: #2f3082 !important; /* Using CSS variable for primary color */
+    padding: 20px 0;
+    color: white; /* Assuming white text on primary background */
+}
+
+    .car-listing-section .car-card {
+        border: none;
+        transition: transform .3s ease-in-out;
+    }
+
+    .car-listing-section .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .car-listing-section .car-title {
+        text-align: center;
+        font-size: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .car-listing-section .car-text {
+        text-align: center;
+        font-size: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .car-listing-section .car-card:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    .car-listing-section .card-body:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+    }

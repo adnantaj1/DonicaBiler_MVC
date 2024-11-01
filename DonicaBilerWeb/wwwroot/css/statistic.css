@@ -1,0 +1,45 @@
+﻿.info-section {
+    background-color: #d3d3d3; /* Light grey background */
+    color: #000; /* Black text  */
+    padding: 20px 0; /* Padding for better spacing */
+}
+
+.info-column {
+    text-align: center; /* Center-align the content */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+    .info-column:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Slight highlight on hover */
+    }
+
+.info-link {
+    text-decoration: none; /* No underline for links */
+    color: inherit; /* Inherit the white color */
+}
+
+.info-title, .info-time, .info-number, .info-label {
+    margin: 0; /* Remove default margin */
+}
+
+.info-title {
+    font-size: 1.25rem; /* Slightly larger font for the title */
+}
+
+.info-time {
+    font-size: 1.5rem; /* Larger font size for time */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.info-small {
+    font-size: 0.85rem; /* Smaller font size for additional text */
+}
+
+.info-number {
+    font-size: 2rem; /* Large font size for numbers */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.info-label {
+    font-size: 1rem; /* Standard font size for labels */
+}
