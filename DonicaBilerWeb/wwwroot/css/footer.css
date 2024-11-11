@@ -16,7 +16,7 @@
         background-image: url('/assets/donica1.jpeg'); /* Path to your background image */
         background-size: cover; /* Cover the entire area of the footer */
         background-position: center; /* Center the background image */
-        filter: blur(8px); /* Adjust the px value to increase or decrease the blur effect */
+        filter: blur(3px); /* Adjust the px value to increase or decrease the blur effect */
         z-index: -1; /* Ensures the blur is behind the footer content */
     }
 
@@ -106,3 +106,4 @@
 .nav {
     margin-top: 20px; /* Top margin for navbar */
 }
+

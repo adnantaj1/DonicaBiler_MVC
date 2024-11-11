@@ -40,10 +40,8 @@
             </ul>
         </div>
     </header>
-    <div class="content">
-        <main role="main">
-            @RenderBody()
-        </main>
+    <div >
+       @RenderBody()  
     </div>
 
     <footer>
@@ -52,7 +50,7 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     <Script>
         $(document).ready(function () {
             $(window).on('scroll', function () {

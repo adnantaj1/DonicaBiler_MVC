@@ -1,7 +1,6 @@
 ﻿.car-listing-section {
-    background-color: #2f3082 !important; /* Using CSS variable for primary color */
     padding: 20px 0;
-    color: white; /* Assuming white text on primary background */
+    color: white;
 }
 
     .car-listing-section .car-card {

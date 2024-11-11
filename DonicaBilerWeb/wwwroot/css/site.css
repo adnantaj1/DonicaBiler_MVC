@@ -11,9 +11,7 @@ body {
     font-family: "Open Sans", sans-serif;
     background: #2f3082 !important;
 }
-#nav-checkbox, .nav-toggle{
-    display:none;
-}
+
 .hero{
     position:relative;
     width:100%;
@@ -34,9 +32,7 @@ body {
     height: 90vh; /* Adjust this if needed */
     overflow: hidden;
 }
-.content {
-    width: 100%;
-}
+
 header {
     position: fixed;
     top: 0;
@@ -63,21 +59,20 @@ header {
     z-index: 1050; /* Ensures the header is above other content */
     background-color: transparent; /* Starts transparent */
 }
-
-.logo h2{
-    color:#fff;
-    text-transform:uppercase;
-    font-weight:normal;
+.logo h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
 }
-.logo a {
-    text-decoration: none; 
-    color: inherit; 
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
 }
 
     .logo a:hover {
-        text-decoration: none; 
-        color: #ccc; 
+        text-decoration: none;
+        color: #ccc;
     }
 .nav-menu li {
     display: inline-block;
@@ -96,9 +91,9 @@ header {
     background: #2f3082 !important;
     color: #000;
 }
-.active a:hover{
-    color:#000 !important;
-}
+    .active li a:hover {
+        color: #000 !important;
+    }
 
 .video-background {
     position: relative; /* Changed from fixed to relative */
@@ -126,3 +121,95 @@ header {
     z-index: 10; /* Ensures the text appears above the video */
 }
 
+
+.exclusive-section {
+    position: relative;
+    width: 100%;
+    padding: 50px 0; /* Add more padding for better spacing */
+    color: white; /* Text color for visibility */
+    text-align: center; /* Center align text */
+    overflow: hidden; /* Ensures the pseudo-element doesn't exceed the section bounds */
+}
+
+    /* Pseudo-element for blurred background */
+    .exclusive-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/assets/donicaBaner.jpeg');
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px); /* Adjust blur intensity as needed */
+        z-index: -1; /* Keep the background behind the content */
+    }
+
+    .exclusive-section .content {
+        position: relative;
+        max-width: 800px; /* Control the width of the content */
+        margin: auto; /* Center align the content block */
+        padding: 20px; /* Inner padding */
+        z-index: 1; /* Ensure content is above the blurred background */
+    }
+
+    .exclusive-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .exclusive-section p {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .exclusive-section .btn {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+    }
+
+        .exclusive-section .btn:hover {
+            background-color: #0056b3;
+        }
+
+
+.samePartner {
+    background-color: white; /* Set background to white */
+    padding: 40px 0; /* Vertical padding */
+    margin-top: 20px; /* Space after the exclusive section */
+}
+
+    .samePartner h1 {
+        margin-bottom: 20px; /* Space below the heading */
+        color: black; /* Text color for the heading */
+    }
+
+    .samePartner .container {
+        display: flex;
+        justify-content: space-around; /* Distribute space around items */
+        align-items: center; /* Align items vertically */
+        flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+    }
+
+    .samePartner .partner-list {
+        list-style: none; /* Remove list bullets */
+        padding: 0; /* Remove padding */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Full width */
+    }
+
+        .samePartner .partner-list li {
+            margin: 0 15px; /* Horizontal spacing between logos */
+            flex: 1; /* Distribute space evenly */
+            text-align: center; /* Center the logos */
+        }
+
+        .samePartner .partner-list img {
+            max-width: 100%; /* Full width of the container */
+            height: auto; /* Maintain aspect ratio */
+        }
